@@ -1,5 +1,5 @@
-import { db } from '@config/firebaseConfig';
-import { User } from '@entities/user';
+import { db } from '../config/firebaseConfig';
+import { User } from '../entities/user';
 
 const USERS_COLLECTION = 'USERS';
 

@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { fetchUserData } from '@repository/userCollection';
+import { fetchUserData } from '../../repository/userCollection';
 
-import { successHandler } from 'utils/responseHandlers';
-import { HttpError } from 'utils/error';
+import { successHandler } from '../../utils/responseHandlers';
+import { HttpError } from '../../utils/error';
 
 export const fetchUserDataHandler = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const userId = req.params.userId;

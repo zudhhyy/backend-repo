@@ -1,7 +1,7 @@
-import { auth } from '@config/firebaseConfig';
-import { createUser, fetchUserData } from '@repository/userCollection';
-import { HttpError } from '@utils/error';
-import { successHandler } from '@utils/responseHandlers';
+import { auth } from '../../config/firebaseConfig';
+import { fetchUserData } from '../../repository/userCollection';
+import { HttpError } from '../../utils/error';
+import { successHandler } from '../../utils/responseHandlers';
 import { NextFunction, Request, Response } from 'express';
 
 export const loginUserDataHandler = async (req: Request, res: Response, next: NextFunction): Promise<void> => {

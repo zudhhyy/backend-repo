@@ -1,6 +1,6 @@
 import express from 'express';
-import { fetchUserDataHandler, loginUserDataHandler, updateUserDataHandler } from '@controller/api';
-import { authMiddleware } from '@middleware/authMiddleware';
+import { fetchUserDataHandler, loginUserDataHandler, updateUserDataHandler } from '../controller/api';
+import { authMiddleware } from '../middleware/authMiddleware';
 
 const router = express.Router();
 

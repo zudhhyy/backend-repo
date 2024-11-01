@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { HttpError } from 'utils/error';
-import { auth } from '@config/firebaseConfig';
+import { HttpError } from '../utils/error';
+import { auth } from '../config/firebaseConfig';
 
 export const authMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const authorization = req.headers.authorization;
